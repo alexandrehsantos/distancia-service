@@ -14,7 +14,7 @@ public class RestauranteMongo {
  @Id
  private Long id;
  private String cep;
- private Long tipoDeCozinha;
+ private Long tipoDeCozinhaId;
  
  
 }
