@@ -7,9 +7,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 public interface RestauranteMongoRepository extends MongoRepository<RestauranteMongo, Long> {
 	
 		
-	Page<RestauranteMongo> findaAll(Pageable limit);
+	Page<RestauranteMongo> findAll(Pageable limit);
 	
-	Page<RestauranteMongo> finadAllByTipoDeCozinhaId(Long tipoDeCozinhaId, Pageable limit);
+	Page<RestauranteMongo> findAllByTipoDeCozinhaId(Long tipoDeCozinhaId, Pageable limit);
 	
 	
 }

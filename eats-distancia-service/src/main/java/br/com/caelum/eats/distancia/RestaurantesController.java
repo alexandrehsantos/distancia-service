@@ -1,4 +1,4 @@
-package br.com.caelum.eats.distancia.Controller;
+package br.com.caelum.eats.distancia;
 
 import java.net.URI;
 
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import br.com.caelum.eats.distancia.ResourceNotFoundException;
 import br.com.caelum.eats.distancia.mongo.RestauranteMongo;
 import br.com.caelum.eats.distancia.mongo.RestauranteMongoRepository;
 import lombok.AllArgsConstructor;

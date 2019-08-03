@@ -43,7 +43,7 @@ class DistanciaService {
 		
 //		List<Restaurante> aprovadosDoTipoDeCozinha = restaurantes.findAllByAprovadoAndTipoDeCozinhaId(true, tipoDeCozinhaId, LIMIT).getContent();
 		
-		List<RestauranteMongo> aprovadosDoTipoDeCozinha = restaurantes.finadAllByTipoDeCozinhaId(tipoDeCozinhaId, LIMIT).getContent();
+		List<RestauranteMongo> aprovadosDoTipoDeCozinha = restaurantes.findAllByTipoDeCozinhaId(tipoDeCozinhaId, LIMIT).getContent();
 		
 		return calculaDistanciaParaOsRestaurantes(aprovadosDoTipoDeCozinha, cep);
 	}
