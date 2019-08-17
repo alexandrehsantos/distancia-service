@@ -39,7 +39,7 @@ public class RestaurantesController {
 
 	@PutMapping("/restaurantes/{id}")
 	public RestauranteMongo atualiza(@PathVariable Long id, @RequestBody RestauranteMongo restauranteMongo) {
-
+//		throw new RuntimeException();
 		if (!restauranteMongoRepository.existsById(id)) {
 			throw new ResourceNotFoundException();
 		}
